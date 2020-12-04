@@ -22,7 +22,7 @@ jobs:
     steps:
       - name: Checkout
         run: |
-          git clone https://github.com/Sunert/Scripts.git ~/Scripts
+          git clone https://github.com/likeclj/Y.git ~/Y
       - name: Use Node.js 12.x
         uses: actions/setup-node@v1
         with:
@@ -30,13 +30,13 @@ jobs:
       - name: npm install
         if: env.YOUTH_HEADER
         run: |
-          cd ~/Scripts
+          cd ~/Y
           npm install
       - name: '运行 【中青看点】'
         if: env.YOUTH_HEADER
         run: |
-          cd ~/Scripts
-          node Task/youth.js
+          cd ~/Y
+          node Y/youth.js
         env:
           YOUTH_NOTIFY_CONTROL: ${{ secrets.YOUTH_NOTIFY_CONTROL }}
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
