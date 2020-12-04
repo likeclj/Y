@@ -36,7 +36,7 @@ jobs:
         if: env.YOUTH_HEADER
         run: |
           cd ~/Scripts
-          node Scripts/youth.js
+          node Task/youth.js
         env:
           YOUTH_NOTIFY_CONTROL: ${{ secrets.YOUTH_NOTIFY_CONTROL }}
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
@@ -46,3 +46,5 @@ jobs:
           BARK_SOUND: ${{ secrets.BARK_SOUND }}
           DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}
           DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
+
+    
