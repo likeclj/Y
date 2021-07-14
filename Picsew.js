@@ -1,3 +1,8 @@
+/*
+hostname=buy.itunes.apple.com
+
+^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body https://raw.githubusercontent.com/Xirou/Script/master/QuantumultX/File/Picsew.js
+*/
 var obj = JSON.parse($response.body);
 obj = {"receipt": {
     "receipt_type": "Production",
