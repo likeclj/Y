@@ -14,7 +14,6 @@
 | `jd_Evaluation.py` | 京东评价相关 |
 | `sendNotify.js` | 通知推送模块 |
 | `raw_scripts_ttl.js` | 辅助脚本 |
-| `Picsew.js` | 图片相关工具 |
 
 ## GitHub Actions
 
