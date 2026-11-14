@@ -1,41 +1,18 @@
-# Y - 个人自动化脚本
+# Y
 
-自用脚本仓库，主要用于阅读类 App 和部分平台的日常任务自动化。
+> 仓库已清空：原阅读类 App / 平台签到的自动化脚本及对应 GitHub Actions 工作流均已移除，现仅保留本 README。
 
-## 脚本列表
+## 已移除内容
 
-| 文件 | 说明 |
-|------|------|
-| `youth.js` | 中青阅读 / 中青看点 |
-| `qqreads.js` | 企鹅阅读（QQ阅读） |
-| `weibo.js` | 微博签到 |
-| `Auto_Kuaishou.js` | 快手极速版 |
-| `jzread.js` | 其他阅读相关 |
-| `jd_Evaluation.py` | 京东评价 |
-| `raw_scripts_ttl.js` | 太太乐 |
-| `sendNotify.js` | 通用通知推送模块 |
+- **脚本**：中青看点（`youth.js`）、QQ 阅读（`qqreads.js`）、微博签到（`weibo.js`）、快手极速版（`Auto_Kuaishou.js`）、九章头条（`jzread.js`）、太太乐（`raw_scripts_ttl.js`）、京东评价（`jd_Evaluation.py`）、通知推送模块（`sendNotify.js`），均已删除。
+- **工作流**：`youth.yml`、`weibo.yml`，均已删除。
+- 相关 Cookie / Token 环境变量（Secrets）不再被任何脚本引用，如不再使用可在 **Settings → Secrets** 中一并清理。
 
-## GitHub Actions
+## 备注
 
-| 工作流 | 说明 |
-|--------|------|
-| `youth.yml` | 中青看点定时任务（需配置 Secrets） |
-| `weibo.yml` | 微博签到（依赖外部仓库脚本） |
-
-运行前需在仓库 **Settings → Secrets** 中配置对应环境变量（如 `YOUTH_HEADER`、`WB_TOKEN`、推送相关 Token 等）。
-
-## 使用说明
-
-- 本仓库为**个人自用**
-- 脚本可能依赖 Cookie、Header 或代理工具（Quantumult X / Surge 等）
-- 请根据自身环境修改变量后再使用
-
-## 注意事项
-
-- 脚本较旧，平台规则可能已变更，使用前请自行测试
-- 请遵守相关平台服务条款，合理使用
-- 不提供技术支持
+- 本仓库原为个人自用自动化脚本集合。
+- 如不再需要，可在 **Settings → Danger Zone → Delete this repository** 删除本仓库。
 
 ---
 
-*最后整理：2026-11*
+*最后整理：2026-11-14*
